@@ -1,8 +1,7 @@
 # chromeprintbug
 Reproduceable Chrome Print Bug
 
-On current version of chrome 95.0.4638.69 (Official Build) (64-bit) - and chromium based products such as Edge - a flexbox element with a gap attribue that is hidden via a print stylesheet will cause the print-preview to believe the document is many thousands of pages long and will timeout/crash the browser tab.
-
+On current version of chrome 95.0.4638.69 (Official Build) (64-bit) - and chromium based products such as Edge - an empty flexbox element with a gap attribue when printing is attmpted will result in the print-preview document believing it is many thousands of pages long freezing/crashing the tab.
 If the gap attribute is remove from the stylesheet, the bug no longer occurs.
 
 ```html
